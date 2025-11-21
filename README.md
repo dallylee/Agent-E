@@ -38,5 +38,3 @@ U datoteci `js/app.js` promijeni vrijednost konstante `NIGHT_KEY` na željeni kl
 - `shaders/` – GLSL shaderi za nebulu.
 - `assets/` – sloj za eventualna dodatna sredstva; trenutačne slike planeta su uvezene kao data URI nizovi unutar `js/planetAssets.js` kako bi repo ostao bez binarnih datoteka.
 - `data/episodes.json` – sadržaj epizoda vođen JSON-om.
-css/style.css
-New
