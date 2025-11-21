@@ -1,8 +1,3 @@
-E.md
-+40
--1
-
-# Agent-E
 # Agentica Eli – Noćna misija
 
 Statička stranica koja spaja WebGL nebo, vremenski pristup i male interaktivne epizode za Eli. Sve radi bez build koraka – samo otvori `index.html`.
