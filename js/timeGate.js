@@ -50,6 +50,7 @@ export class TimeGate {
   }
 
   triggerPlayableClick() {
+    if (this.state !== STATES.PLAYABLE) return;
     if (this.callbacks.onPlayableClick) this.callbacks.onPlayableClick();
   }
 

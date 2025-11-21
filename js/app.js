@@ -24,7 +24,7 @@ function updateOverlayForState(state) {
     scene.setDimmed(false);
   } else if (state === STATES.PLAYABLE) {
     hideOverlay();
-    renderIncomingMessage(() => handlePlayableClick());
+    renderIncomingMessage(() => gate.triggerPlayableClick());
     scene.setDimmed(false);
   } else {
     setOverlay(`
@@ -39,7 +39,6 @@ function updateOverlayForState(state) {
 }
 
 function handlePlayableClick() {
-  gate.triggerPlayableClick();
   hideIncomingMessage();
   wormhole.playSequence().then(() => {
     renderPortalLock(validateKey);
@@ -104,7 +103,7 @@ async function init() {
   });
   parallaxPlanets();
   gate.onStateChange((state) => updateOverlayForState(state));
-  gate.onPlayableClick(() => handlePlayableClick());
+  gate.onPlayableClick(handlePlayableClick);
   gate.start();
   setInterval(() => {
     if (gate.state === STATES.BEFORE) updateOverlayForState(STATES.BEFORE);
