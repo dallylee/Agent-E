@@ -1,0 +1,18 @@
+{
+  "episodes": [
+    {
+      "id": "ep1_star_hunt",
+      "title": "Prva misija: Zvjezdani trag",
+      "introText": "Negdje u blizini crvotočine skriva se posebna zvijezda. Nađi je.",
+      "sceneType": "hiddenObject",
+      "objects": [
+        { "id": "star1", "label": "Zvijezda 1", "x": 20, "y": 40, "isTarget": false },
+        { "id": "star2", "label": "Zvijezda 2", "x": 55, "y": 30, "isTarget": true },
+        { "id": "star3", "label": "Zvijezda 3", "x": 80, "y": 60, "isTarget": false }
+      ],
+      "successText": "Pronašla si posebnu zvijezdu!",
+      "rewardItemId": "starLight",
+      "nextEpisodeId": null
+    }
+  ]
+}
